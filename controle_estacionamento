@@ -1,0 +1,51 @@
+import math
+
+hrchegada = input('Informe horario de chegada (hh:mm): ')
+horach, mimch = hrchegada.split(":")
+hrsaida = input('Informe horario de saida (hh:mm): ')
+horasa, mimsa = hrsaida.split(":")
+horach = int(horach)
+mimch = int(mimch)
+horasa = int(horasa)
+mimsa = int(mimsa)
+
+horatotal = horasa - horach
+mimtotal = mimsa - mimch
+
+horamim = horatotal * 60
+totalpermanencia = horamim + mimtotal
+
+horatotal24 = 0
+horamim24 = 0
+totalpermanencia24 = 0
+
+
+if horach < horasa:
+    if totalpermanencia >= 0 and totalpermanencia < 120:
+        horaperma = totalpermanencia / 60
+        preco = math.ceil(horaperma) * 1
+        print(f'O valor total a pagar é de R$ {preco}')
+    if totalpermanencia >= 120 and totalpermanencia < 240:
+        horaperma = totalpermanencia / 60
+        preco = math.ceil(horaperma) * 1.4
+        print(f'O valor total a pagar é de R$ {preco}')
+    if totalpermanencia >= 240:
+        horaperma = totalpermanencia / 60
+        preco = math.ceil(horaperma) * 2
+        print(f'O valor total a pagar é de R$ {preco}')
+if horach > horasa:
+    horatotal24 = (horasa - horach) + 24
+    horamim24 = horatotal24 * 60
+    totalpermanencia24 = horamim24 + mimtotal
+    if totalpermanencia24 >= 0 and totalpermanencia24 < 120:
+        horaperma = totalpermanencia24 / 60
+        preco = math.ceil(horaperma) * 1
+        print(f'O valor total a pagar é de R$ {preco}')
+    if totalpermanencia24 >= 120 and totalpermanencia24 < 240:
+        horaperma = totalpermanencia24 / 60
+        preco = math.ceil(horaperma) * 1.4
+        print(f'O valor total a pagar é de R$ {preco}')
+    if totalpermanencia24 >= 240:
+        horaperma = totalpermanencia24 / 60
+        preco = math.ceil(horaperma) * 2
+        print(f'O valor total a pagar é de R$ {preco}')
