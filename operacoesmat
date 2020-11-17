@@ -1,0 +1,34 @@
+print('Escolha uma operação matemática: ')
+print('1 - Soma')
+print('2 - Subtração')
+print('3 - Multiplicação')
+print('4 - Divisão')
+resposta = int(input('Resposta: '))
+if resposta == 1:
+    num1 = int(input('Informe o primeiro numero: '))
+    num2 = int(input('Informe o segundo numero: '))
+    operacao = num1 + num2
+    print(f'O resultado da soma dos 2 numeros informados é {operacao}')
+elif resposta == 2:
+    num1 = int(input('Informe o primeiro numero: '))
+    num2 = int(input('Informe o segundo numero: '))
+    operacao = num1 - num2
+    print(f'O resultado da subtração dos 2 numeros informados é {operacao}')
+elif resposta == 3:
+    num1 = int(input('Informe o primeiro numero: '))
+    num2 = int(input('Informe o segundo numero: '))
+    operacao = num1 * num2
+    print(f'O resultado da multiplicação dos 2 numeros informados é {operacao}')
+elif resposta == 4:
+    num1 = int(input('Informe o primeiro numero: '))
+    num2 = int(input('Informe o segundo numero: '))
+    operacao = num1 / num2
+    print(f'O resultado da divisão dos 2 numeros informados é {operacao}')
+else:
+    print('Opção invalida')
+    print('Escolha uma operação matemática: ')
+    print('1 - Soma')
+    print('2 - Subtração')
+    print('3 - Multiplicação')
+    print('4 - Divisão')
+    resposta = int(input('Resposta: '))
