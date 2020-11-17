@@ -1,0 +1,38 @@
+contador = 0
+print('Exercicio 1 - Realize as somas abaixo: ')
+letra_a = int(input("Qual a soma de 12 + 47? "))
+if letra_a == 59:
+    print('Parabéns. Resposta correta')
+    contador = contador + 1
+else:
+    print('Infelizmente a reposta esta errada. O numero correto seria 59.')
+
+letra_b = int(input("Qual a soma de 8 + 74? "))
+if letra_b == 82:
+    print('Parabéns. Resposta correta')
+    contador = contador + 1
+else:
+    print('Infelizmente a reposta esta errada. O numero correto seria 82.')
+
+letra_c = int(input("Qual a soma de 29 + 38? "))
+if letra_c == 67:
+    print('Parabéns. Resposta correta')
+    contador = contador + 1
+else:
+    print('Infelizmente a reposta esta errada. O numero correto seria 67.')
+
+letra_d = int( input( "Qual a soma de 12 + 25? " ) )
+if letra_d == 37:
+    print( 'Parabéns. Resposta correta' )
+    contador = contador + 1
+else:
+    print( 'Infelizmente a reposta esta errada. O numero correto seria 37.' )
+
+letra_e = int(input("Qual a soma de 17 + 11? "))
+if letra_e == 28:
+    print('Parabéns. Resposta correta')
+    contador = contador + 1
+else:
+    print('Infelizmente a reposta esta errada. O numero correto seria 28.')
+
+print(f'Chegamos ao fim do exercicio. Parabéns você teve {contador} acertos.')
