@@ -1,0 +1,111 @@
+reajuste = 0
+bonus = 0
+salarioatual = float(input("Informe o salario atual: "))
+tempoempresa = float(input("Informe o tempo de empresa do funcionario em anos: "))
+
+if salarioatual <= 500:
+    if tempoempresa < 1:
+        reajuste = salarioatual * 25 / 100
+        bonus = 0
+        print(f'O salario com reajuste será de R$ {salarioatual + reajuste + bonus:,.2f}')
+    elif tempoempresa >= 1 and tempoempresa <= 3:
+        reajuste = salarioatual * 25 / 100
+        bonus = 100
+        print( f'O salario com reajuste será de R$ {salarioatual + reajuste + bonus:,.2f}')
+    elif tempoempresa >= 4 and tempoempresa <= 6:
+        reajuste = salarioatual * 25 / 100
+        bonus = 200
+        print( f'O salario com reajuste será de R$ {salarioatual + reajuste + bonus:,.2f}')
+    elif tempoempresa >= 7 and tempoempresa <= 10:
+        reajuste = salarioatual * 25 / 100
+        bonus = 300
+        print( f'O salario com reajuste será de R$ {salarioatual + reajuste + bonus:,.2f}')
+    elif tempoempresa > 10:
+        reajuste = salarioatual * 25 / 100
+        bonus = 500
+        print( f'O salario com reajuste será de R$ {salarioatual + reajuste + bonus:,.2f}')
+if salarioatual > 500 and salarioatual <= 1000:
+    if tempoempresa < 1:
+        reajuste = salarioatual * 20 / 100
+        bonus = 0
+        print( f'O salario com reajuste será de R$ {salarioatual + reajuste + bonus:,.2f}' )
+    elif tempoempresa >= 1 and tempoempresa <= 3:
+        reajuste = salarioatual * 20 / 100
+        bonus = 100
+        print( f'O salario com reajuste será de R$ {salarioatual + reajuste + bonus:,.2f}' )
+    elif tempoempresa >= 4 and tempoempresa <= 6:
+        reajuste = salarioatual * 20 / 100
+        bonus = 200
+        print( f'O salario com reajuste será de R$ {salarioatual + reajuste + bonus:,.2f}' )
+    elif tempoempresa >= 7 and tempoempresa <= 10:
+        reajuste = salarioatual * 20 / 100
+        bonus = 300
+        print( f'O salario com reajuste será de R$ {salarioatual + reajuste + bonus:,.2f}' )
+    elif tempoempresa > 10 :
+        reajuste = salarioatual * 20 / 100
+        bonus = 500
+        print( f'O salario com reajuste será de R$ {salarioatual + reajuste + bonus:,.2f}' )
+if salarioatual > 1000 and salarioatual <= 1500 :
+    if tempoempresa < 1 :
+        reajuste = salarioatual * 15 / 100
+        bonus = 0
+        print( f'O salario com reajuste será de R$ {salarioatual + reajuste + bonus:,.2f}' )
+    elif tempoempresa >= 1 and tempoempresa <= 3 :
+        reajuste = salarioatual * 15 / 100
+        bonus = 100
+        print( f'O salario com reajuste será de R$ {salarioatual + reajuste + bonus:,.2f}' )
+    elif tempoempresa >= 4 and tempoempresa <= 6 :
+        reajuste = salarioatual * 15 / 100
+        bonus = 200
+        print( f'O salario com reajuste será de R$ {salarioatual + reajuste + bonus:,.2f}' )
+    elif tempoempresa >= 7 and tempoempresa <= 10 :
+        reajuste = salarioatual * 15 / 100
+        bonus = 300
+        print( f'O salario com reajuste será de R$ {salarioatual + reajuste + bonus:,.2f}' )
+    elif tempoempresa > 10 :
+        reajuste = salarioatual * 15 / 100
+        bonus = 500
+        print( f'O salario com reajuste será de R$ {salarioatual + reajuste + bonus:,.2f}' )
+if salarioatual > 1500 and salarioatual <= 2000 :
+    if tempoempresa < 1 :
+        reajuste = salarioatual * 10 / 100
+        bonus = 0
+        print( f'O salario com reajuste será de R$ {salarioatual + reajuste + bonus:,.2f}' )
+    elif tempoempresa >= 1 and tempoempresa <= 3 :
+        reajuste = salarioatual * 10 / 100
+        bonus = 100
+        print( f'O salario com reajuste será de R$ {salarioatual + reajuste + bonus:,.2f}' )
+    elif tempoempresa >= 4 and tempoempresa <= 6 :
+        reajuste = salarioatual * 10 / 100
+        bonus = 200
+        print( f'O salario com reajuste será de R$ {salarioatual + reajuste + bonus:,.2f}' )
+    elif tempoempresa >= 7 and tempoempresa <= 10 :
+        reajuste = salarioatual * 10 / 100
+        bonus = 300
+        print( f'O salario com reajuste será de R$ {salarioatual + reajuste + bonus:,.2f}' )
+    elif tempoempresa > 10 :
+        reajuste = salarioatual * 10 / 100
+        bonus = 500
+        print( f'O salario com reajuste será de R$ {salarioatual + reajuste + bonus:,.2f}' )
+if salarioatual > 2000 :
+    if tempoempresa < 1 :
+        reajuste = salarioatual * 0 / 100
+        bonus = 0
+        print('Sem aumento ou bonus')
+        print( f'O salario com reajuste será de R$ {salarioatual + reajuste + bonus:,.2f}' )
+    elif tempoempresa >= 1 and tempoempresa <= 3 :
+        reajuste = salarioatual * 0 / 100
+        bonus = 100
+        print( f'O salario com reajuste será de R$ {salarioatual + reajuste + bonus:,.2f}' )
+    elif tempoempresa >= 4 and tempoempresa <= 6 :
+        reajuste = salarioatual * 0 / 100
+        bonus = 200
+        print( f'O salario com reajuste será de R$ {salarioatual + reajuste + bonus:,.2f}' )
+    elif tempoempresa >= 7 and tempoempresa <= 10 :
+        reajuste = salarioatual * 0 / 100
+        bonus = 300
+        print( f'O salario com reajuste será de R$ {salarioatual + reajuste + bonus:,.2f}' )
+    elif tempoempresa > 10 :
+        reajuste = salarioatual * 0 / 100
+        bonus = 500
+        print( f'O salario com reajuste será de R$ {salarioatual + reajuste + bonus:,.2f}' )
